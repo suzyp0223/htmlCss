@@ -14,3 +14,5 @@ html &amp; css study project
    예시) 돋보기 아이콘 <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
 
 //flex 참고 링크 - https://velog.io/@adguy/align-content-vs-align-items
+
+// css 선택자 연습 게임 사이트 css diner - https://flukeout.github.io/
