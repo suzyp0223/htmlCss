@@ -3,17 +3,24 @@
   width: 80%; 
   max-width: 1920px;
   margin: 0 auto;
-  border: 1px solid black;
+}
 
+.black-bg {
+  background-color: black;
+  width: 100%;
+  height: 1000px;
+  left: 0;
+  position: absolute;
+  z-index: 1;
 }
 
 /* header */
 header {
-  background-color: black;
   text-align: center;
   padding-top: 20px;
   position: relative;
   color: white;
+  z-index: 10;
 }
 
 header .gnb {
@@ -173,8 +180,8 @@ header .gnb .search .searchUl li span {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  
-}
+  z-index: 10;
+} 
 
 .notice p {
   font-size: 1.5rem;
@@ -183,18 +190,174 @@ header .gnb .search .searchUl li span {
   line-height: 1.8rem;
 
   margin-bottom: 2rem;
-
-}
+} 
 
 .notice button {
   border: 1px solid white;
   padding: 5px 15px;
-  color: white; /* 버튼은 칼라를 승계를 못해서 따로줌.*/
+  color: white; /* 버튼은 칼라를 승계를 못해서 따로줌. */
   background-color: inherit;
   font-weight: bold;
-  border-radius: 10px;
+  border-radius: 14px;
+} 
+
+
+/* mainBanner */
+.mainBanner {
+  height: 600px;
+  border-radius: 14px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 50px;
+
+  background-image: url("https://a0.muscache.com/im/pictures/miso/Hosting-857387972692815761/original/d106e0ef-f825-4ff8-baf7-86256a54fbd5.jpeg?im_w=1440&im_q=highq");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  position: relative;
+  z-index: 10;
 }
 
+.mainBanner .content {  
+  color: white;
+  text-align: center;
+}
 
+.mainBanner .content p {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;  
+}
 
+.mainBanner .content button {
+  border: 1px solid white;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: white;
+  border-radius: 24px;
+}
+
+.mainBanner .content button span {
+  background: linear-gradient(90deg, #6f019c 0%, #c6017e 135.12%); 
+  /* -webkit 접두사가 붙은건 특정 브라우저에서만 작동되는 css다. */
+  -webkit-background-clip: -webkit-text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* idea */
+.city {
+  display: flex;
+  width: 100%;
+}
+
+.city .card {
+  width: 25%;
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+.city .card:nth-of-type(1) figcaption {
+  background-color: purple;
+}
+.city .card:nth-of-type(2) figcaption {
+  background-color: rgb(255, 115, 21);
+}
+.city .card:nth-of-type(3) figcaption {
+  background-color: rgb(93, 217, 254);
+}
+.city .card:nth-of-type(4) figcaption {
+  background-color: green;
+}
+
+.city .card:nth-last-of-type(1) {
+  margin-right: 0px;
+}
+
+.city .card img {
+  width: 100%;
+  height: 150px;
+  /* 이미지 밑에서 약간의 공간이 있는데 display: block; 으로 없앤다*/
+  display: block;
+  border-radius: 15px 15px 0px 0px;
+}
+
+.city .card figcaption {
+  border-radius: 0px 0px 15px 15px;
+  height: calc(150px - calc(24px *2));
+  padding: 24px 16px;
+  color: white;
+  /* 드래그 방지 */
+  user-select: none;
+
+}
+
+.city .card figcaption p{
+  font-size: 1.7rem;
+  line-height: 3rem;
+  font-weight: bold;
+}
+
+.city .card figcaption span {
+  font-size: 1rem;
+}
+
+/* expression */
+.expression {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-gap: 25px;
+  grid-template-areas:
+  "heading heading"
+  "div1 div2";
+}
+
+.expression .heading {
+  grid-area: heading;
+}
+
+.expression .photoDiv {
+  height: calc(720px - calc(60px *2));
+  padding: 50px;  
+  border-radius: 14px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.expression .photoDiv:nth-of-type(1){
+  background-image: url("https://a0.muscache.com/im/pictures/61b1b70c-dba7-42da-9f7b-579a43e185f6.jpg?im_w=720");
+}
+
+.expression .photoDiv:nth-of-type(2){
+  background-image: url("https://a0.muscache.com/im/pictures/miso/Hosting-889327184371470511/original/f4474efe-0671-4309-af1e-31ba22324e37.jpeg?im_w=720");
+}
+
+.expression .photoDiv p {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 3rem;
+} 
+
+.expression .photoDiv button{
+  color: black;
+  font-weight: bold;
+  border: none;
+  background-color: white;
+  padding: 8px 20px;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+
+.expression .photoDiv button:hover{
+  background-color: lightgray;
+}
 
