@@ -5,6 +5,14 @@
   margin: 0 auto;
 }
 
+/* 반응형 @media break point css*/
+@media screen and (max-width: 767px) {
+  .wrap {
+    width: 90%;
+  }
+}
+
+
 .black-bg {
   background-color: black;
   width: 100%;
@@ -254,10 +262,12 @@ header .gnb .search .searchUl li span {
 .city {
   display: flex;
   width: 100%;
+  overflow: auto;
 }
-
+  
 .city .card {
   width: 25%;
+  min-width: 250px;  
   margin-right: 30px;
   cursor: pointer;
 }
@@ -305,6 +315,41 @@ header .gnb .search .searchUl li span {
 
 .city .card figcaption span {
   font-size: 1rem;
+}
+
+@media screen and (max-width: 767px) {
+  .city {
+    /* 브라우저별 스크롤 없애기 */
+    -ms-overflow-style: none; /* ie */
+    scrollbar-width: none; /* firefox */
+  }
+  /* chrome 가상클래스*/
+  .city::-webkit-scrollbar {
+    display: none;
+  }
+    
+  .city .card {
+    margin-right: 15px;
+  }
+  
+  .city .card:nth-of-type(1) figcaption {
+    background-color: purple;
+  }
+  .city .card:nth-of-type(2) figcaption {
+    background-color: rgb(255, 115, 21);
+  }
+  .city .card:nth-of-type(3) figcaption {
+    background-color: rgb(93, 217, 254);
+  }
+  .city .card:nth-of-type(4) figcaption {
+    background-color: green;
+  }
+  
+  .city .card figcaption p{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding-bottom: 0.5rem;
+  }
 }
 
 /* expression */
