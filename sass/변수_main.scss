@@ -1,0 +1,24 @@
+//변수 : 변하는 수(숫자, 문자 등 모든 데이터 타입)
+//$ : 기호 + "작명" : "저장할 내용";
+//$myColor: $lightblue;
+//color: $myColor;
+
+$myColor: lightblue;
+
+body {
+    .box {
+        border: 1px solid black;
+        p {
+            color: $myColor;
+        }
+    }
+    .box2 {
+        width: 100%;
+        background-color: black;
+        color: gray;
+        &:hover {
+            background-color: white;
+        }
+        }
+}
+

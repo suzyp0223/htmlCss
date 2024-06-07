@@ -1,0 +1,14 @@
+body .box {
+  border: 1px solid black;
+}
+body .box p {
+  color: lightblue;
+}
+body .box2 {
+  width: 100%;
+  background-color: black;
+  color: gray;
+}
+body .box2:hover {
+  background-color: white;
+}
