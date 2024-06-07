@@ -1,0 +1,23 @@
+/* mixin */
+
+@mixin btn($line : black, $font-color : black) {
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: inherit;
+  border: 1px solid lightgray;
+  border-radius: 14px;
+
+  border: 1px solid $line;
+  color: $font-color;
+}
+
+.btn-1 {
+  @include btn($font-color : red);
+}
+
+.btn-2 {
+  @include btn(blue, blue);
+}
+
+
+
