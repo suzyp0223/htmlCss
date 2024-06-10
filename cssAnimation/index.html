@@ -6,42 +6,24 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CSS Tricks MouseMove</title>
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./style_mousemove.css">
 
 </head>
 
 <body>
-  <h1>x : <span id="x"></span>, y : <span id="y"></span></h1>
-  <div id="cursor">
-
+  <div id="targetBox">
+    <div id="blind"></div>
+    <h1>안녕하세요 뽀짝코딩에 오신것을 환영합니다</h1>
   </div>
 
-
-
-
   <script>
-    window.addEventListener("mousemove", 마우스추적);
-    var x = document.querySelector("#x");
-    var y = document.querySelector("#y");
-    var cursor = document.querySelector("#cursor");
+    var targetBox = document.querySelector("#targetBox");
+    var blind = document.querySelector("#blind");
 
+    targetBox.addEventListener("mousemove", function (e) {
+      blind.style.transform = "translateX(" + e.clientX + "px)";
+    })
 
-    function 마우스추적(event) {
-      x.innerHTML = event.clientX;
-      y.innerHTML = event.clientY;
-      // cursor.style.top = event.clientY + "px";
-      // cursor.style.left = event.clientX + "px";
-      // cursor.style.top = (event.clientY - 25 ) + "px";  //마우스가 정중앙에 위치
-      // cursor.style.left = (event.clientX - 25 ) + "px"; //마우스가 정중앙에 위치
-
-
-      // cursor.style.transform = "translate(" + event.clientX + "px," + event.clientY + "px)";  
-
-      let value = (event.clientX - 25) + "px," + (event.clientY - 25) + "px";  //마우스가 정중앙에 위치
-      cursor.style.transform = "translate(" + value + ")";
-
-
-    }
   </script>
 
 </body>
