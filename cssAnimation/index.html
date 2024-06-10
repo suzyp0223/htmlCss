@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram Join</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+  <div id="box">
+    <!-- <div class="box-overloay">
+      <p>뽀짝코딩</p>
+      <p>010-1234-5678</p>
+    </div> -->
+  </div>
+
+  <h1 id="heading">제목입니다</h1>
+  <p>내용입니다</p>
+  <button>수정하기</button>
+  <button onclick="modalOpCl('block')">삭제하기</button>
+
+  <div class="modalDiv">
+    <div class="bg" onclick="modalOpCl('none')"></div>
+    <div class="modal">
+      <p>정말 삭제하시겠습니까?</p>
+      <button onclick="modalOpCl('none')">취소</button>
+      <button>삭제</button>
+    </div>
+  </div>
+
+  <!--  JS에서 UI 바꾸는 방법
+  1. html/css ui를 만든다.
+  2. css로 숨긴다.
+  3. js로 다시 나타나게 한다.
+
+  dry: don't repeat your code
+
+  -->
+
+  <script>
+    //모달 열고, 닫기
+    // function modalOpen() {
+    //   var modal = document.querySelector(".modalDiv");
+    //   modal.style.display = "block";
+    // }
+
+    // function modalClose() {
+    //   var modal = document.querySelector(".modalDiv");
+    //   modal.style.display = "none";
+    // }
+
+    //코드 반복 줄이기
+    function modalOpCl(인자) {
+      var modal = document.querySelector(".modalDiv");
+      modal.style.display = 인자;
+
+    }
+  </script>
+
+</body>
+
+</html>

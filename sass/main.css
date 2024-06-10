@@ -3,12 +3,22 @@
 비슷하게 @import: css파일 가져올때 사용.
 _파일이름.scss : 파일 이름 앞에 " - " (언더바) 다른 scss파일에 임포트 될때 사용된다.
 */
-div {
+.big-box {
   width: 100px;
   height: 100px;
-  border: 1px solid red;
+  border: 5px solid hotpink;
 }
 
-.box {
-  color: red;
+.big-box .box1 {
+  width: 100px;
+  height: 100px;
+  margin: 30px;
+  border: 5px solid blue;
+}
+
+.big-box .box2 {
+  width: 100px;
+  height: 100px;
+  margin: 30px;
+  border: 5px solid green;
 }

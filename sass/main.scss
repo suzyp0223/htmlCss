@@ -3,9 +3,40 @@
 _파일이름.scss : 파일 이름 앞에 " - " (언더바) 다른 scss파일에 임포트 될때 사용된다.
 */
 
-@use "test" as c;
-
-
-.box {
-  color: c.$변수;
+.big-box {
+  width: 100px;
+  height: 100px;
+  border: 5px solid hotpink;
 }
+  
+.big-box .box1 {
+  width: 100px;
+  height: 100px;
+  margin: 30px;
+  border: 5px solid blue;
+} 
+    
+.big-box .box2 {
+  width: 100px;
+  height: 100px;
+  margin: 30px;
+  border: 5px solid green;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+// @use "test" as c;
+
+
+// .box {
+//   color: c.$변수;
+// }
