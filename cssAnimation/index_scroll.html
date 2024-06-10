@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Scroll 위치 추적</title>
+  <link rel="stylesheet" href="./style_scroll.css">
+
+</head>
+
+<body>
+  <div class="scroll-outer">
+    <div class="scroll-inner"></div>
+  </div>
+
+
+  <script>
+    /* 현재 문서에서 스크롤을 얼마나 내렸는지 확인하는 방법
+      문서의 전체 높이 : document.documentElement.scrollHeight
+      브라우저가 보여주고 있는 높이 : window.innerHeight
+      스크롤의 위치 : document.documentElement.scrollTop
+
+      스크롤의 위치 / (문서의 전체 높이 - 브라우저가 보여주고 있는 높이) * 100%
+    */
+
+    var scrollY = 0;
+    var target = document.querySelector(".scroll-inner");
+
+    window.addEventListener("scroll", function () {
+      var documentHeight = document.documentElement.scrollHeight;
+      var browserHeight = window.innerHeight;
+      scrollY = document.documentElement.scrollTop;
+      var percent = scrollY / (documentHeight - browserHeight) * 100;
+      // target.style.height = Math.round(percent) + "%"; //세로 스크롤
+
+      target.style.width = Math.round(percent) + "%";   //가로 스크롤
+      console.log(percent + ",  " + Math.round(percent));
+    });
+
+
+  </script>
+
+</body>
+
+</html>

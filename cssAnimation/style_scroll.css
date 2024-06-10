@@ -1,0 +1,31 @@
+@charset "UTF-8";
+body {
+  height: 1000vh;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(45deg, rgb(2, 0, 36) 0%, rgb(9, 9, 121) 35%, rgb(0, 212, 255) 100%);
+}
+
+.scroll-outer {
+  position: fixed;
+  background-color: gray;
+  border-radius: 14px;
+  overflow: hidden;
+  transform: translateY(-50%);
+  /* 세로 스크롤 */
+  /* 가로 스크롤 */
+  width: 100vw;
+  height: 5px;
+  top: 10px;
+  left: 50%;
+}
+
+.scroll-inner {
+  /* 세로 스크롤 */
+  position: absolute;
+  top: 0;
+  background-color: yellow;
+  border-radius: 14px;
+  /* 가로 스크롤 */
+  width: 0%;
+  height: 100%;
+}
