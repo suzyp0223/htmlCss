@@ -1,0 +1,22 @@
+.mt-sm {
+  margin-top: 25px;
+}
+
+.mt-lg{
+  margin-top: 50px;
+}
+
+.mb-sm {
+  margin-bottom: 25px;
+}
+
+.mb-lg{
+  margin-bottom: 50px;
+}
+
+.heading {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  color: black;
+  font-weight: 900;
+}
