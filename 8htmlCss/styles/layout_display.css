@@ -1,0 +1,35 @@
+/*
+레이아웃
+
+display - inline, block, inline-block
+*/
+
+/*
+inline요소 : ex) span..
+    - 영역의 크리가 내부 콘텐츠 크기로 정해진다
+    - margin, padding의 top/bottom
+    - 여러 요소가 가로 배치가 된다
+       ex) 1 2 3
+
+
+block 요소 : ex) div..
+    - 영역의 크기를 width, height 지정할 수 있다.
+    - width를 지정하지 않으면 가로 전체를 차지한다.
+    - 여러 요소가 세로 배치가 된다.
+       ex) 1
+           2
+           3
+
+
+inline-block 요소 : ex) inpu..
+    - 영역의 크기를 width, height 지정할 수 있다.
+    - 여러 요소가 가로 배치가 된다. 
+
+*/
+
+
+
+
+
+
+
