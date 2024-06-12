@@ -24,12 +24,35 @@ block 요소 : ex) div..
 inline-block 요소 : ex) inpu..
     - 영역의 크기를 width, height 지정할 수 있다.
     - 여러 요소가 가로 배치가 된다. 
-
 */
 
 
+/*
+요소를 없애는 방법 - 
+display: none,
+ ⇨ 아예 요소가 존재 하지 않은것처럼 자리 자체가 사라짐.
+
+visibility: hidden
+ ⇨ 자리는 계산하지만 요소의 색이나 컨텐츠는 보이지 않게함.
+*/
+
+div {
+    height: 200px;
+    border: solid;
+}
 
 
 
+.box1 {
+    background-color: darkorange;
+}
+
+.box2 {
+    background-color: greenyellow;
+}
+
+.box3 {
+    background-color: dodgerblue;
+}
 
 
