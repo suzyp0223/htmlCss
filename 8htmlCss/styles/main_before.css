@@ -1,0 +1,14 @@
+/*
+Pseudo-Class Selector
+    (가상 요소 선택자)
+
+    before, after
+*/
+
+.love::before {
+    content: '❤';
+}
+
+
+
+
