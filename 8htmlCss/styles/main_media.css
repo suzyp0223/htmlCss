@@ -1,0 +1,39 @@
+body {
+    background-color: blanchedalmond;
+}
+
+
+/* @media (min-width: 300px) and (max-width: 500px) {
+    body {
+        background-color: tomato;
+        }
+} */
+
+@media screen and (orientation: landscape) {
+    body {
+        background-color: tomato;
+    }
+}
+
+/* 모바일 퍼스트 */
+.title {
+    font-size: 50px;
+}
+
+@media screen and (min-width: 480px) {
+    body {
+        background-color: tomato;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        background-color: rgb(47, 87, 197);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        background-color: rgb(109, 190, 62);
+    }
+}
