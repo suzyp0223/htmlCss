@@ -1,4 +1,13 @@
 /* Type Selector */
-h2 {
-    color: purple;
+
+/* div:first-child {
+    font-size: 30px;
+} */
+
+p:first-of-type {
+    color: red;
+}
+
+.coffee:first-child {
+    color: yellowgreen;
 }
