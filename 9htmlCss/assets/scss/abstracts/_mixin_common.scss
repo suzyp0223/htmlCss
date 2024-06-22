@@ -12,9 +12,21 @@
 // }
 
 
-// 말줄임표시 
+//한줄 말줄임표시 
 @mixin ellipse {
   text-overflow: ellipsis;
   white-space: nowrap; //굽히지 않고 오른쪽으로쭉 이어지되
   overflow: hidden;  //넘치면 감춘다
+}
+
+//멀티 말줄임표시
+@mixin multi-ellipsis($font-size, $line-height, $lines) {
+  font-size: $font-size;
+  line-height: $line-height;
+  max-height: $line-height * $lines;
+  overflow: hidden;  //여기까지는 ... 없고 두줄 넘으면 hidden.
+  display: -webkit-box;
+  -webkit-line-clamp: $lines;
+  -webkit-box-orient: vertical;  /* autoprefixer: off */ //작동이 안되면 sass 오류. 주석이 있어야 ' ... ' 이 작동.
+
 }
