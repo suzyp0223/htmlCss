@@ -18,3 +18,9 @@
     display: none;
   }
 }
+
+body.scroll-off {     // 팝업이 떠있을때는 뒷배경(body)의 
+  overflow-y: hidden;   //스크롤이 움직이지 않도록 함
+  -ms-touch-action: none;  //.menu-option-popup 옵션선택영역
+  touch-action: none;
+}
