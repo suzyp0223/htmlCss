@@ -24,6 +24,7 @@
     }
 
     &::after {
+      content: '';
       position: absolute;
       bottom: 0;
       left: 0;
@@ -34,7 +35,6 @@
       opacity: 0.15;
 
     }
-
   }
 
   //메뉴정보영역
@@ -118,7 +118,7 @@
       .tab-switch-box {
         margin-top: 0;
         border-radius: 3px;
-        width: 160px;
+        overflow: hidden;
       }
 
       .tab-switch {
@@ -146,6 +146,7 @@
             left: 0;
             width: 1px;
             height: 17px;
+            background-color: #e7e7e7;
           }
         }
       }
@@ -171,16 +172,13 @@
       border-radius: 3px;
       font-weight: 700;
       background-color: $green;
-      color:#fff;
+      color: #fff;
       @include ellipsis;
+
       &:disabled {
         background-color: #c9c9c9;
         color: $booking-color-text131;
       }
-
-
     }
-
   }
-
 }
