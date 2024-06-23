@@ -386,6 +386,44 @@ textarea::-webkit-outer-spin-button {
   z-index: 1;
   opacity: 0.15;
 }
+.menu-detail-area .menu-info-area {
+  padding: 0 18px 20px;
+  margin-top: -20px;
+}
+.menu-detail-area .menu-info-area .common-inner {
+  position: relative;
+  padding: 18px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 0 4px 3px rgba(0, 0, 0, 0.04);
+  z-index: 1;
+}
+.menu-detail-area .menu-info-area .menu-info-group {
+  margin-top: 5px;
+}
+.menu-detail-area .menu-info-area .menu-info-group .menu-price {
+  line-height: 24px;
+  font-size: 19px;
+  font-weight: 700;
+  color: #ff3d3b;
+}
+.menu-detail-area .menu-info-area .menu-info-group .menu-grade::before {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 12px;
+  background-color: #b8b8b8;
+}
+.menu-detail-area .menu-number-of-order {
+  flex-shrink: 0;
+  color: #8f8f8f;
+}
+.menu-detail-area .menu-number-of-order em {
+  margin-left: 4px;
+  font-style: normal;
+  font-weight: 700;
+  color: #333;
+}
 
 .go-to-top {
   padding: 16px 0 32px;
