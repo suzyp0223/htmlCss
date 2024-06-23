@@ -38,7 +38,8 @@
     &.is-ordered {
       padding-left: 16px;
       border-right: 1px solid $booking-color-bg102;
-      & + .recent-menu-item {
+
+      &+.recent-menu-item {
         padding-left: 16px;
       }
     }
@@ -82,7 +83,7 @@
     border-radius: 100%;
     background-color: $booking-color-bg18;
   }
-  
+
   .ico-cart {
     width: 16px;
     height: 16px;
@@ -92,14 +93,14 @@
     margin-top: 8px;
     font-weight: 600;
     font-size: 14px;
-    @include ellipse;
+    @include ellipsis;
   }
 
   .menu-price {
     font-size: 13px;
     font-weight: 700;
     color: $point-color;
-    @include ellipse;
+    @include ellipsis;
   }
 
 
