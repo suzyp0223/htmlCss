@@ -5,7 +5,7 @@
   right: 0;
   height: $order-box-area-height;
   border-top: 1px solid $booking-color-border161;
-  box-shadow: 0 0 6px 4px rgba(0,0,0,0.03);
+  box-shadow: 0 0 6px 4px rgba(0, 0, 0, 0.03);
   background-color: #fff;
   z-index: 9100;
 
@@ -18,14 +18,14 @@
   .menu-name {
     font-size: 15px;
     color: $booking-color-text6;
-    @include ellipse;
+    @include ellipsis;
   }
 
   .menu-price {
     font-size: 18px;
     font-weight: 700;
     color: $point-color;
-    @include ellipse;
+    @include ellipsis;
   }
 
   .btn-order {
@@ -40,7 +40,7 @@
     letter-spacing: -0.3px;
     color: #fff;
   }
-  
+
   .icon {
     position: relative;
     margin-left: 6px;
@@ -65,6 +65,6 @@
     text-align: center;
     color: #fff;
   }
-  
-  
+
+
 }
