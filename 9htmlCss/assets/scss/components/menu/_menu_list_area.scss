@@ -46,6 +46,14 @@
     letter-spacing: -0.3px;
   }
 
+  .btn-toggle {
+    //이미지와 이미지를 감싼태그가 미묘하게 어긋날때 display:flex; 주면 딱 맞는다.
+    display: flex;
+    // 내가준 패딩값 때문에 밀릴때 패딩값 만큼 마이너스 마진값을 주면 된다.
+    margin: -16px;
+    padding: 16px;
+  }
+
   .period {
     font-size: 14px;
     letter-spacing: -0.3px;
