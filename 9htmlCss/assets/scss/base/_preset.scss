@@ -24,3 +24,12 @@ body.scroll-off {     // 팝업이 떠있을때는 뒷배경(body)의
   -ms-touch-action: none;  //.menu-option-popup 옵션선택영역
   touch-action: none;
 }
+
+// functional css
+.fw700 {
+  font-weight: 700;
+} 
+
+.color-point {
+  color: $point-color;
+}
